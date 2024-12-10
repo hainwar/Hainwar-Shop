@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hainwar - Jasa Joki Tugas dan Akun Premium</title>
+    <meta name="description" content="Hainwar - Jelajahi layanan kami, termasuk jasa joki tugas dan penjualan akun premium.">
+    <title>Services - Hainwar</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header Section -->
+    <header class="main-header">
         <div class="container">
-            <h1>Hainwar</h1>
-            <nav>
+            <img src="../assets/images/haishop.png" alt="Hainwar Logo" class="logo">
+            <div class="hamburger" id="hamburger">
+                <!-- Hamburger Icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav-links" id="nav-links">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -21,12 +29,49 @@
         </div>
     </header>
 
-   services
+    <!-- Hero Section -->
+    <section class="hero services-hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Explore the variety of services we offer to make your life easier!</p>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/hero-service.png" alt="Services Hero Image">
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="services-heading">What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="../assets/images/task.jpg" alt="Jasa Joki Tugas">
+                    <h3>Jasa Joki Tugas</h3>
+                    <p>Kami membantu menyelesaikan tugas kuliah Anda dengan cepat, terpercaya, dan tepat waktu.</p>
+                </div>
+                <div class="service-item">
+                    <img src="../assets/images/premium.jpg" alt="Penjualan Akun Premium">
+                    <h3>Penjualan Akun Premium</h3>
+                    <p>Dapatkan akses ke akun premium seperti Netflix, Spotify, dan lainnya dengan harga terjangkau.</p>
+                </div>
+                <div class="service-item">
+                    <img src="../assets/images/support.jpg" alt="Customer Support">
+                    <h3>Customer Support</h3>
+                    <p>Tim kami selalu siap membantu Anda dengan pelayanan terbaik kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
         <div class="container">
             <p>&copy; 2024 Hainwar. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

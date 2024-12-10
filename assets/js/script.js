@@ -1,15 +1,20 @@
 // Smooth Scroll for Navigation
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href').replace('.html', '');
-        const targetElement = document.querySelector(targetId);
+        const href = e.target.getAttribute('href');
 
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
+        // Pastikan hanya menangani navigasi internal
+        if (href && href.startsWith('#')) {
+            e.preventDefault();
+            const targetId = href.slice(1); // Menghapus '#' dari href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });
@@ -29,4 +34,13 @@ const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+});
+
+// Menutup Menu Setelah Klik di Mobile
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
+    });
 });
