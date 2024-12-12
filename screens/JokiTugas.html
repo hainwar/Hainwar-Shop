@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hainwar - Jelajahi layanan kami, termasuk jasa joki tugas dan penjualan akun premium.">
+    <title>Jasa Tugas - Hainwar</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        /* Styling untuk Grid */
+        .hero-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .main-content .container p{
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Menyesuaikan jumlah kolom */
+            gap: 40px; /* Jarak antar item */
+
+        }
+        .service-item {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-item h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        .service-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        @media screen and (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .main-content {
+                margin-top: -150px;
+            }
+
+            .container h1 {
+                font-size: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.3rem;
+            }
+
+            .hero-content p {
+                text-align: center;
+            }
+
+            .main-content .container h3 {
+                font-size: 1rem;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .main-content .container p {
+                font-size: 0.8rem;
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <img src="../assets/images/haishop.png" alt="Hainwar Logo" class="logo">
+            <div class="hamburger" id="hamburger">
+                <!-- Hamburger Icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="services.html" class="active">Layanan</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="contact.html">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero services-hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <h1>Jasa Tugas</h1>
+                <p>Silahkan cek layanan dibawah yang Anda butuhkan!</p>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/jasatugas.gif" alt="Services Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="container">
+            <h1>Jasa Tugas Hainwar</h1>
+            <p>Di Hainwar, kami menyediakan berbagai jasa tugas yang dapat membantu Anda menyelesaikan pekerjaan dengan mudah dan cepat. Berikut adalah layanan yang kami tawarkan:</p>
+
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>PPT</h3>
+                    <p>Desain dan pembuatan presentasi PowerPoint dengan desain menarik dan informatif.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Makalah</h3>
+                    <p>Penulisan makalah akademik dengan referensi yang tepat dan sesuai dengan instruksi.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Program</h3>
+                    <p>Pembuatan program komputer atau aplikasi sesuai kebutuhan Anda, termasuk software dan aplikasi web.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Artikel</h3>
+                    <p>Penulisan artikel ilmiah atau umum dengan konten yang informatif dan terstruktur dengan baik.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Essay</h3>
+                    <p>Penulisan essay dengan analisis mendalam untuk berbagai topik akademik.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Review Buku</h3>
+                    <p>Review buku secara komprehensif untuk tugas kuliah atau analisis pribadi.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Jurnal</h3>
+                    <p>Pembuatan dan analisis jurnal ilmiah untuk kebutuhan akademik.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Desain Grafis</h3>
+                    <p>Pembuatan desain grafis untuk poster, brosur, dan materi promosi lainnya.</p>
+                </div>
+                <!-- Anda dapat menambahkan lebih banyak jasa di sini -->
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Hainwar. All rights reserved.</p>
+        </div>
+        </footer>
+
+    <!-- Script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

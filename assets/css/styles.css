@@ -173,6 +173,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.about-item a {
+    text-decoration: none;
+}
+
 .about-item h3 {
     font-size: 1.5rem;
     color: #264653;
@@ -487,5 +491,61 @@ body {
     .service-item {
         flex: 1 1 calc(100% - 2rem);
         max-width: 100%;
+    }
+}
+
+/* Jasa Joki */
+.akun {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.akun-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #264653;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .akun-item {
+        flex: 1 1 calc(100% - 2rem);
+        max-width: 100%;
+    }
+
+    .akun .akun-heading {
+        font-size: 1.4rem;
     }
 }
