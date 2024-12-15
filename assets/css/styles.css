@@ -581,6 +581,15 @@ a:hover {
     .akun .akun-heading {
         font-size: 1.4rem;
     }
+
+    .table {
+        font-size:0.7rem;
+        
+    }
+    
+    th, td {
+        padding: 5px;
+    }
 }
 
 /* Features Section */
